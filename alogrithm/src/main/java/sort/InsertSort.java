@@ -9,7 +9,7 @@ import java.util.Arrays;
  */
 public class InsertSort {
 	public static void main(String[] args) {
-		 int[] ints = {7,6,5,4,3,2,1};
+		 int[] ints = {49,38,65,97,76,13,27,49};
 		 InsertSort(ints);
 	}
 	
@@ -17,7 +17,7 @@ public class InsertSort {
 		int i, j;
 		int n = arr.length;
 		int target;
-		System.out.println(Arrays.toString(arr));	
+//		System.out.println(Arrays.toString(arr));	
 		// 假定第一个元素被放到了正确的位置上
 		// 这样，仅需遍历1 - n-1
 		for (i = 1; i < n; i++) {//对第i个进行排序
@@ -30,8 +30,8 @@ public class InsertSort {
 			}
 
 			arr[j] = target;
-			System.out.println(Arrays.toString(arr));
+//			System.out.println("第"+i+"遍: "+Arrays.toString(arr));
 		}
-		System.out.println(Arrays.toString(arr));
+//		System.out.println(Arrays.toString(arr));
 	}
 }
